@@ -1,6 +1,18 @@
 # TOY EXAMPLE: TWO POPULATIONS ARE PERCEIVED AS ONE
+
+# To run this file click "Source" in the upper left hand side
+# Or enter: source('~/Desktop/BIOL-3295/Code/TwoCaribouHerdExample.R')
+# insole the CONSOLE below or in base R, however you will need to know
+# the correct path. Entering getwd() into the console may help you with
+# determining the path.
+
+# This is commented out. If you would like to improve the color palette
+# you will need to Install the package "viridis". At the very end of this
+# script there is a line you can uncomment to utilize the better color
+# palette.
+
 # Loads a color palette
-library(viridis)
+# library(viridis)
 
 # Remove all objects - always start with this
 rm(list=ls())
@@ -115,4 +127,5 @@ minarray[3,3] = min(Popn1a$Popn.Size+Popn2a$Popn.Size)
 
 #plot the minimum values
 par(mfrow = c(1,1))
-filled.contour(d1vec, d2vec, minarray, xlab = "popn 1 death rate, d", ylab = "popn 2 death rate, d",color.palette=viridis, main = "Minimum perceived population size")
+filled.contour(d1vec, d2vec, minarray, xlab = "popn 1 death rate, d", ylab = "popn 2 death rate, d", main = "Minimum perceived population size")
+#filled.contour(d1vec, d2vec, minarray, xlab = "popn 1 death rate, d", ylab = "popn 2 death rate, d",color.palette=viridis, main = "Minimum perceived population size")
