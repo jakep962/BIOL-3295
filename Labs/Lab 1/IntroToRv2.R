@@ -10,6 +10,7 @@ tail(MyData)
 seq(1:100)
 seq(1,100,0.5)
 x = seq(1:100)
+# Get the mean
 mean(x)
 y = runif(100, min = 0, max = 10)
 ########
