@@ -53,7 +53,8 @@ Popn1b = GeoGrowth(490,0.5,0.6,2015,2080)
 Popn1c = GeoGrowth(490,0.5,0.55,2015,2080)
 
 # Population 2 is the increasing poulation. We will consider 3 scenarios
-# a) fast, b) medium, and c) slow increase. Note the initial poulation size
+### a) fast, b) medium, and c) slow increase. Note the initial poulation size
+#Shouldn't it be a) slow, b) medium and c) fast increase. Since a smaller death rate value will cause a faster increase in the population?
 # for population 2 is just 10. What is it for population 1?
 Popn2a = GeoGrowth(10,0.5,0.45,2015, 2080)
 Popn2b = GeoGrowth(10,0.5,0.4,2015, 2080)
